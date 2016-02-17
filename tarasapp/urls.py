@@ -4,4 +4,6 @@ from tarasapp.views import *
 
 urlpatterns = [
     url(r'^testmessage/', sendmessage),
+    url(r'^adduser/', sendotp),
+    url(r'^verifyuser/', verifyotp),
 ]
