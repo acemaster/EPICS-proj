@@ -1,0 +1,152 @@
+SL.no.,Location,"I.P.C.section/
+Severity","Injured/
+deaths",Cause,Lane,Between ,Season,"Time of the 
+day"
+1,"Kazipet
+Junction","337(minor)
+",1 injured,Hit from back,left,"Motorcycle
+X auto",Spring,morning
+2,"Kazipet
+Junction",338(major),1 injured,Lane crossing,left,"Motorcycle
+X car",Summer,morning
+3,"Kazipet
+Junction","279(vehicle 
+Damage)",_,Skidded,Left,"Motorcycle
+",Summer,evening
+4,"Bhavani
+Theatre",304 A (death),1 death,Road crossing,left,Truck x pedestrian,Winter,midnight
+5,"Bhavani
+Theatre",338(major),1 injured,Hit from back,left,Auto x pedestrian,Spring,evening
+6,FCI ‘X’road,338(major),1 injured,Road crossing,left,car x pedestrian,Winter,Afternoon
+7,FCI ‘X’road,"279(vehicle 
+Damage)",_,Hit from back,Right,Car x truck,summer,Afternoon
+8,FCI ‘X’road,"279(vehicle 
+Damage)",_,Hit from back,Right,auto x truck,summer,Afternoon
+9,FCI ‘X’road,338(major),1 injured,Overturn,Left,Auto,Rainy,morning
+10,FCI ‘X’road,338(major),1 injured,Road crossing,left,Auto x pedestrian,Rainy,twilight
+11,FCI ‘X’road,"304 A (death)
+337(minor)","1 death
+1 injured",Hit from back,left,"Motorcycle
+X bus",summer,Afternoon
+12,"Fatimanagar
+Rly.bridge","338(major)
+279(vehicle 
+Damage)",1 injured,Hit from back,left,"Motorcycle
+X auto",Winter,morning
+13,"Fatimanagar
+Rly.bridge","304 A (death)
+337(minor)
+279(vehicle 
+Damage)","1 death
+5 injured",Head on collision,right,Auto x jeep,Rainy,night
+14,"Fatimanagar
+Rly.bridge","279(vehicle 
+Damage)",_,Hit from back,left,Car x bus,Rainy,evening
+15,"Fatimanagar
+Rly.bridge",338(major),1 injured,Road crossing,right,"Motorcycle
+X pedestrian",Rainy,night
+16,"Fatimanagar
+Rly.bridge","337(minor)
+279(vehicle 
+Damage)
+",1 injured,Head on collision,right,"Motorcycle
+X car",Rainy,night
+17,"Fatimanagar
+Rly.bridge","279(vehicle 
+Damage)
+",_,Driving wrong side,Left,Car x truck,Rainy,night
+18,"Fatimanagar
+Rly.bridge","338(major)
+337(minor)
+279(vehicle 
+Damage)
+",2 injured,Hit from back,left,"Motorcycle
+X auto",Rainy,night
+19,"Fatimanagar
+Rly.bridge","279(vehicle 
+Damage)",_,Head on collision,left,Car x car,Winter,midnight
+20,"Fatimanagar
+Rly.bridge","337(minor)
+",1 injured,Driving wrong side,Left,"Motorcycle
+X auto",Winter,night
+21,"Fatimanagar
+Junction",338(major),1 injured,Driving wrong side,Left,"Motorcycle
+X motorcycle",Winter,night
+22,"Andhra bank ATM, Fatimanagar",338(major),1 injured,Road crossing,right,"Motorcycle
+X pedestrian",Rainy,twilight
+23,Golden café junction,"337(minor)
+279(vehicle 
+Damage)
+",1 injured,Hit from back,left,Car x truck,summer,Afternoon
+24,Golden café junction,304 A (death),1 death,Hit from back,left,"Motorcycle
+X car",Summer,night
+25,Golden café junction,"279(vehicle 
+Damage)",_,Hit from back,Right,Car x truck,Rainy,afternoon
+26,Golden café junction,"338(major)
+337(minor)",2 injured,Road crossing,right,"Motorcycle
+X jeep
+",Rainy,evening
+27,Kumar mess,304 A (death),1 death,Road crossing,left,Truck x pedestrian,summer,Afternoon
+28,SBH NIT,"304 A (death)
+337(minor)","1 death
+1 injured",Hit from back,Right,"Motorcycle
+ x minitruck",Summer,twilight
+29,NIT main gate,338(major),1 injured,Lane crossing,Right,"Motorcycle
+ x truck",summer,Afternoon
+30,Tara gardens,"337(minor)
+",1 injured,Road crossing,right,"Motorcycle
+X pedestrian",Winter ,twilight
+31,REC petrol pump,"338(major)
+337(minor)",2 injured,Road crossing,left,auto X pedestrian,Summer,night
+32,REC petrol pump,338(major),1 injured,Road crossing,left,"Motorcycle
+X pedestrian",Winter,morning
+33,A to Z medicals,"338(major)
+337(minor)
+279(vehicle 
+Damage)",4 injured,Hit from back,left,Car x auto,Winter ,twilight
+34,Forrest office,338(major),1 injured,Road crossing,left,"Motorcycle
+X pedestrian",summer,Afternoon
+35,Forrest office,"337(minor)
+",1 injured,While merging ,right,Auto x auto,Summer,night
+36,Forrest office,"337(minor)
+",2 injured,Hit from back,left,Truck X pedestrian,Summer,evening
+37,Forrest office,"338(major)
+",2 injured,Overturn,right,auto,Rainy,twilight
+38,Forrest office,"337(minor)
+279(vehicle 
+Damage)
+",2 injured,Driving wrong side,Left,Car x truck,Rainy,afternoon
+39,Forrest office,"337(minor)
+",5 injured,Hit from back,Right,Car x auto,Rainy,evening
+40,Forrest office,"279(vehicle 
+Damage)",_,Hit from back,Right,Car x Motorcycle,Winter,Afternoon
+41,Forrest office,"279(vehicle 
+Damage)",_,Hit median,Right,car,Winter,Afternoon
+42,Forrest office,338(major),1 injured,Road crossing,left,"Motorcycle
+X pedestrian",Winter,night
+43,Wadepally ‘x’ roads,338(major),1 injured,Hit from back,Right,truck x Motorcycle,Summer,midnight
+44,Wadepally ‘x’ roads,"279(vehicle 
+Damage)",_,While merging ,right,Car x car,Summer,evening
+45,Collector office,"337(minor)
+279(vehicle 
+Damage)",1 injured,Overspeeding,Left,Car x truck,Spring ,afternoon
+46,Collector office,338(major),1 injured,Lost control and hit,left,"Motorcycle
+X pedestrian",Summer,evening
+47,Collector office,"279(vehicle 
+Damage)",_,Overspeeding,right,Car x car,Summer,evening
+48,Collector office,338(major),1 injured,Hit from back,left,Car X pedestrian,summer,Afternoon
+49,Collector office,"279(vehicle 
+Damage)",_,Hit median,Left,Car x truck,Winter,Afternoon
+50,DIG Bungalow,"279(vehicle 
+Damage)",_,Hit from back,left,Car X minitruck,Winter,morning
+51,DEO office,338(major),1 injured,Driving wrong side,right,"Motorcycle
+X pedestrian",Summer,evening
+52,Adalat,"338(major)
+337(minor)",3 injured,Overturn,left,tractor,Winter,morning
+53,Adalat 2nd gate,337(minor),1 injured,Road crossing,left,"Motorcycle
+X pedestrian",Summer,night
+54,Adalat 2nd gate,338(major),1 injured,Overturn,left,Auto ,summer,Afternoon
+55,Surabhi food court,"304 A (death)
+337(minor)","1 death
+1 injured",Hit median,Left,"Motorcycle
+",Rainy,night

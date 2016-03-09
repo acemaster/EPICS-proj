@@ -1,0 +1,71 @@
+Sl no.,Location ,I.P.C Section/Severity,Injured/Deaths ,Cause ,Lane ,Vehicles ,Season,Time of day
+1,Kazipet junction,"304 A
+(death)",1 death,Road crossing,Left,Minitruck x pedestrian,Summer,Afternoon 
+2,Kazipet junction,"304 A
+(death)",1 death,Road crossing,Left,RTC Bus x pedestrian,Summer,Morning
+3,Kazipet junction,"304 A
+(death)",1 death,Road crossing,Left,Truck x pedestrian,Summer,morning
+4,"Fatimanagar  
+Rly. bridge","337,279
+(minor,vehicle
+Damage)",1 injured,Hit from back,Left ,Motorcycle x motorcycle,Spring ,Night
+5,"Fatimanagar  
+Rly. bridge","279
+( vehicle
+Damage)",_,Double hit,Left,"Car x motorcycle
+X car",Spring,Afternoon
+6,"Fatimanagar  
+Rly. bridge","337,279
+(minor,vehicle
+Damage)",1 injured,Hit railing,Right ,Motorcycle,Summer,evening
+7,"Fatimanagar  
+Rly. bridge","304 A
+(death)",1 death,Hit railing,Right,Motorcycle,Summer,Night
+8,"Andhra bank atm,fatimanagar","337
+(minor)",1 injured,Driving wrong side,Right,"Motorcycle
+X motorcycle",Summer,Night
+9,Golden cafe junction,"304 A
+(death)",1 death,Skidding ,Right,Motorcycle,Summer,Night
+10,Golden cafe junction,"337
+(minor)",1 injured,Hit median,Left,Motorcycle,Summer,Night
+11,NIT 2nd gate,"337
+(minor)",1 injured,overspeeding,Left,"Motorcycle
+X auto",Winter,Morning 
+12,NIT main gate,"304 A
+(death)",1 death,Lane  crossing,Right,Car x motorcycle,Winter,Afternoon 
+13,Kalinga dhaba,"304 A
+(death)",1 death,While merging,Left,Car x  auto,Winter,Morning 
+14,Tara gardens,"304 A
+(death)",1 death,Road crossing,Right,Car x  pedestrian,Winter,Night
+15,A To Z Medicals,"337,279
+(minor,vehicle
+Damage)",1 injured,Lane  crossing,Left,Car x motorcycle,Winter,Night
+16,A To Z Medicals,"279( vehicle
+Damage)
+
+
+",_,Lane  crossing,Right,Car x truck,Summer,Morning
+17,Collector office,"338,279
+(major,vehicle
+Damage)",2 injured,Lane  crossing,Right,motorcycle x truck,Winter,Afternoon 
+18,Spencers ,338(major),1 injured,Driving wrong side,Right,"Motorcycle
+X motorcycle",Winter,Morning
+19,Adalat ,"279( vehicle
+Damage)",_,Jump signal,Left,Truck x car,Spring ,Morning
+20,Choti masjid        ,"337,279(minor,vehicle damage)",3 injured ,"Overspeeding
+Hit from back",Left,Car x  auto ,Summer,Morning
+21,Choti masjid,"337
+(minor)",1 injured ,Road crossing,Left,"Motorcycle
+X pedestrian",Summer,Afternoon
+22,Choti masjid,338(major),1 injured,Road crossing,Right ,"Motorcycle
+X pedestrian",Winter,Afternoon 
+23,Adalat 2nd gate,"337
+(minor)",1 injured,Hit while unparking,Left,"Motorcycle
+X motorcycle",Summer,Morning
+24,Hanuman sweet house,338(major),1 injured,Driving wrong side,Right,"Motorcycle
+X motorcycle",Winter,Afternoon
+25,Hanuman sweet house,"279( vehicle
+Damage)",_,Hit median while u-turn,Right,Car ,Summer,Afternoon
+26,Ambedkar junction,"337
+(minor)",2  injured,Hit from back,Left,Car x motorcycle,Spring ,Morning
+27,Police headqarters,338(major),1 injured,Lane  crossing,Left,Car x motorcycle,Winter,Morning
