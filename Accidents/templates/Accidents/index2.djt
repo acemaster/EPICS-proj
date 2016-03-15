@@ -1,0 +1,160 @@
+{% load staticfiles %}
+<script src="https://maps.googleapis.com/maps/api/js">
+    </script>
+<script type="text/javascript">
+
+    // The latitude and longitude of your business / place
+    var position = [17.3660, 78.4760];
+    var position2 = [17.3655, 78.4517];
+    // var position2 = [18.0, 79.58];
+
+    function showGoogleMaps() {
+
+        var latLng = new google.maps.LatLng(position[0], position[1]);
+        var latLng2 = new google.maps.LatLng(position2[0], position2[1]);
+
+        var mapOptions = {
+            zoom: 13, // initialize zoom level - the max value is 21
+            streetViewControl: false, // hide the yellow Street View pegman
+            scaleControl: true, // allow users to zoom the Google Map
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: latLng,
+            panControl: true,
+            panControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_CENTER
+          },
+          zoomControl: true,
+          zoomControlOptions: {
+              style: google.maps.ZoomControlStyle.LARGE,
+              position: google.maps.ControlPosition.RIGHT_CENTER
+          },
+          scaleControl: true,
+          streetViewControl: true,
+          streetViewControlOptions: {
+              position: google.maps.ControlPosition.RIGHT_CENTER
+          },
+          styles:[{"featureType":"water","elementType":"all","stylers":[{"hue":"#7fc8ed"},{"saturation":55},{"lightness":-6},{"visibility":"on"}]},{"featureType":"water","elementType":"labels","stylers":[{"hue":"#7fc8ed"},{"saturation":55},{"lightness":-6},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"hue":"#83cead"},{"saturation":1},{"lightness":-15},{"visibility":"on"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"hue":"#f3f4f4"},{"saturation":-84},{"lightness":59},{"visibility":"on"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"on"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbbbbb"},{"saturation":-100},{"lightness":26},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#ffcc00"},{"saturation":100},{"lightness":-35},{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#ffcc00"},{"saturation":100},{"lightness":-22},{"visibility":"on"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"hue":"#d7e4e4"},{"saturation":-60},{"lightness":23},{"visibility":"on"}]}]
+      };
+
+      map = new google.maps.Map(document.getElementById('googlemaps'),mapOptions);
+      var initialLocation = ""
+      if(navigator.geolocation) {
+        browserSupportFlag = true;
+        navigator.geolocation.getCurrentPosition(function(position) {
+          initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+          map.setCenter(initialLocation);
+          console.log("Your position is Latitude: "+initialLocation.lat()+" and Longitude: "+initialLocation.lng());
+                            // Radius of the circle
+                        //   var rad = 3; // Radius of circle in miles.
+                        //   var center = initialLocation; // LatLng of center point of circle
+                        //   var draw_circle = null;  // object of google maps polygon for redrawing the circle
+
+                        //   rad *= 1600; // convert to meters if in miles
+                        //   if (draw_circle != null) {
+                        //     draw_circle.setMap(null);
+                        // }
+
+                        // draw_circle = new google.maps.Circle({
+                        //     center: initialLocation,
+                        //     radius: rad,
+                        //     strokeColor: "#FF0000",
+                        //     strokeOpacity: 0.4,
+                        //     strokeWeight: 2,
+                        //     fillColor: "#FF0000",
+                        //     fillOpacity: 0.05,
+                        //     map: map
+                        // }).setEditable(true);
+
+          {% if accidents %}
+            {% for accident in accidents %}
+              loc = new google.maps.LatLng({{ accident.lat }},{{ accident.lon }});
+              setMarker(loc,"{{ accident.location|safe }}");
+            {% endfor %}
+          {% endif %}
+          setMarker(initialLocation,"Your loc");
+          }, function() {
+            handleNoGeolocation(browserSupportFlag);
+          });
+    }
+    // console.log("Your position is Latitude: "+initialLocation.lat()+" and Longitude: "+initialLocation.lng());
+        // Drawing Manager
+
+        var drawingManager = new google.maps.drawing.DrawingManager({
+        // drawingMode: google.maps.drawing.OverlayType.MARKER,
+        drawingMode: null,
+        drawingControl: false,
+        drawingControlOptions: {
+          position: google.maps.ControlPosition.TOP_CENTER,
+          drawingModes: [
+          google.maps.drawing.OverlayType.CIRCLE
+          ]
+      },
+      circleOptions: {
+          center: center,
+          radius: rad,
+          strokeColor: "#FF0000",
+          strokeOpacity: 0.4,
+          strokeWeight: 2,
+          fillColor: "#FF0000",
+          fillOpacity: 0.05,
+          map: map
+      }
+    });
+        drawingManager.setMap(map);
+
+        
+
+      function setMarker(initialLocation,location){
+          
+          marker = new google.maps.Marker({
+            position: initialLocation,
+            title: location,
+            map: map,
+            draggable: false,
+            icon: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Red-dot-5px.png',
+            animation: google.maps.Animation.DROP
+        });
+
+        marker['infowindow'] = new google.maps.InfoWindow({
+          content:location
+        });
+        google.maps.event.addListener(marker, 'mouseover', function() {
+            this['infowindow'].open(map, this);
+        });
+        }
+        // Show the default red marker at the location
+      //   marker = new google.maps.Marker({
+      //       position: latLng,
+      //       title: "Hyderabad",
+      //       map: map,
+      //       draggable: false,
+      //       animation: google.maps.Animation.DROP
+      //   });
+
+      //   marker2 = new google.maps.Marker({
+      //       position: latLng2,
+      //       title: "Hyderabad",
+      //       map: map,
+      //       draggable: false,
+      //       animation: google.maps.Animation.DROP
+      //   });
+
+      //   marker['infowindow'] = new google.maps.InfoWindow({
+      //     content:"Hyderabad"
+      // });
+
+      //   marker2['infowindow'] = new google.maps.InfoWindow({
+      //     content:"Hyderabad"
+      // });
+      //   google.maps.event.addListener(marker, 'mouseover', function() {
+      //       this['infowindow'].open(map, this);
+      //   });
+    }
+
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
+
+
+<body>
+<div id="googlemaps" style="width:100%;height:100%;"></div>
+</body>
